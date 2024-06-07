@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Préstamos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simulador de Préstamos</h1>
+        <form id="loan-form">
+            <div>
+                <label for="amount">Monto del Préstamo:</label>
+                <input type="number" id="amount" required>
+            </div>
+            <div>
+                <label for="interest">Tasa de Interés Anual (%):</label>
+                <input type="number" id="interest" step="0.01" required>
+            </div>
+            <div>
+                <label for="years">Plazo del Préstamo (años):</label>
+                <input type="number" id="years" required>
+            </div>
+            <button type="button" onclick="calculateLoan()">Calcular</button>
+        </form>
+        <div id="results">
+            <h2>Resultados</h2>
+            <p id="monthly-payment"></p>
+            <p id="total-payment"></p>
+            <p id="total-interest"></p>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
