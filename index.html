@@ -4,36 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Préstamos</title>
+    <title>Bicicletas Ringo</title>
+    <link rel="shortcut icon" href="./js/img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>Simulador de Préstamos</h1>
-        <form id="loan-form">
-            <div>
-                <label for="amount">Monto del Préstamo:</label>
-                <input type="number" id="amount" required>
-            </div>
-            <div>
-                <label for="interest">Tasa de Interés Anual (%):</label>
-                <input type="number" id="interest" step="0.01" required>
-            </div>
-            <div>
-                <label for="years">Plazo del Préstamo (años):</label>
-                <input type="number" id="years" required>
-            </div>
-            <button type="button" onclick="calculateLoan()">Calcular</button>
-        </form>
-        <div id="results">
-            <h2>Resultados</h2>
-            <p id="monthly-payment"></p>
-            <p id="total-payment"></p>
-            <p id="total-interest"></p>
+    <header id="header"></header>
+    <h1>Bicicletas Ringo</h1>
+    <div class="productos">
+        <h2>Productos</h2>
+        <div class="producto" data-id="1" data-nombre="Bicicleta de Montaña" data-precio="2000">
+            <img src="./js/img/bicicletamontaña.jpeg" alt="Bicicleta de Montaña">
+            <h3>Bicicleta de Montaña</h3>
+            <p>Precio: $20000</p>
+            <button onclick="agregarAlCarrito(this)">Añadir al Carrito</button>
         </div>
+        <div class="producto" data-id="2" data-nombre="Casco" data-precio="1500">
+            <img src="./js/img/casco.jpeg" alt="Casco">
+            <h3>Casco</h3>
+            <p>Precio: $1500</p>
+            <button onclick="agregarAlCarrito(this)">Añadir al Carrito</button>
+        </div>
+        <!-- Agrega más productos aquí -->
     </div>
-    <script src="./js/script.js"></script>
+    <div class="carrito">
+        <h2>Carrito de Compras</h2>
+        <div id="itemsCarrito"></div>
+        <p>Total: $<span id="totalCarrito">0</span></p>
+    </div>
+    <footer></footer>
+    <!-- Scripts de JS  -->
+    <script src="./js/index.js"></script>
+    <script src="./js/nav.js"></script>
 </body>
 
 </html>
