@@ -144,20 +144,23 @@ body {
     margin-bottom: 30px;
 }
 
+.texto3 {
+    margin-top: 20px;
+}
+
 .video {
     margin-top: 50px;
     padding-left: 120px;
 }
 
-.foto1 {
+.foto1 img {
     display: block;
-    width: 10px;
-    height: 20px;
-    margin-top: 80px;
+    width: 90%;
+    margin-top: 60px;
     margin-left: 10px;
 }
 
-.foto2 {
+.foto2 img {
     display: block;
     width: 10px;
     height: 20px;
